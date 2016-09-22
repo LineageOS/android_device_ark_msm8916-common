@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2016 The SmartRomTeam
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,4 +15,4 @@
 # limitations under the License.
 
 # Include board config fragments
-include device/cyanogen/msm8916-common/board/*.mk
+include device/ark/msm8916-common/board/*.mk

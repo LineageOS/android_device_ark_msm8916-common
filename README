@@ -1,1 +1,3 @@
-Shared device tree for Cyanogen msm8916 devices
+#Shared device tree for msm8916 devices
+Now this common device tree support:
+-ARK Benefit A3
