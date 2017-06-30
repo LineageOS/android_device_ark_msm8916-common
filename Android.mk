@@ -17,6 +17,8 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter msm8916 msm8939,$(TARGET_BOARD_PLATFORM_VARIANT)),)
 
+ifeq ($(TARGET_DEVICE), peach)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
@@ -114,5 +116,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(WV_SYMLINKS)
 $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/prima; \
     ln -sf /data/misc/wifi/WCNSS_qcom_cfg.ini \
 	    $(TARGET_OUT)/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini)
+
+endif
 
 endif
